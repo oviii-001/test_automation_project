@@ -1,0 +1,152 @@
+[2026-08-05 21:58:32] [INFO] [BookingAutomation]: ==================================================
+[2026-08-05 21:58:32] [INFO] [BookingAutomation]:  Starting Booking.com Behave Test Execution Suite 
+[2026-08-05 21:58:32] [INFO] [BookingAutomation]: ==================================================
+[2026-08-05 21:58:32] [INFO] [BookingAutomation]: --- Starting Scenario: 'Select a hotel and verify property details page' ---
+[2026-08-05 21:58:32] [INFO] [BookingAutomation]: Initializing WebDriver for 'chrome' (Headless=True)...
+[2026-08-05 21:58:47] [INFO] [BookingAutomation]: WebDriver for 'chrome' initialized successfully.
+[2026-08-05 21:58:47] [INFO] [BookingAutomation]: Navigating to URL: https://www.booking.com
+[2026-08-05 21:58:47] [INFO] [BookingAutomation]: Checking for blocking popups/modals...
+[2026-08-05 21:58:54] [INFO] [BookingAutomation]: Clicked element: ('xpath', "//button[@aria-label='Dismiss sign-in info.'] | //button[@aria-label='Dismiss sign in info.'] | //button[contains(@class, 'b868e42f9b')]")
+[2026-08-05 21:58:54] [INFO] [BookingAutomation]: Dismissed sign-in modal prompt.
+[2026-08-05 21:58:54] [INFO] [BookingAutomation]: Entering destination: 'Paris'
+[2026-08-05 21:58:54] [INFO] [BookingAutomation]: Checking for blocking popups/modals...
+[2026-08-05 21:59:08] [INFO] [BookingAutomation]: Entered text 'Paris' into locator ('xpath', "//input[@name='ss' or @aria-label='Where are you going?' or @placeholder='Where are you going?']")
+[2026-08-05 21:59:09] [INFO] [BookingAutomation]: Clicked element: ('xpath', "//ul[@role='group']//li[1] | //div[@data-testid='autocomplete-results']//li[1] | //li[contains(@id, 'autocomplete-result')]")
+[2026-08-05 21:59:09] [INFO] [BookingAutomation]: Selected first autocomplete suggestion.
+[2026-08-05 21:59:09] [INFO] [BookingAutomation]: Clicking Search button...
+[2026-08-05 21:59:11] [INFO] [BookingAutomation]: Clicked element: ('xpath', "//button[@type='submit' and (.//span[contains(text(),'Search')] or @data-testid='searchbox-search-button')] | //button[@type='submit']")
+[2026-08-05 21:59:11] [INFO] [BookingAutomation]: Verifying Search Results page load...
+[2026-08-05 21:59:12] [INFO] [BookingAutomation]: Extracted text 'Best Western Plus La Demeure' from locator ('xpath', "(//div[@data-testid='title'] | //span[@data-testid='header-title'])[1]")
+[2026-08-05 21:59:12] [INFO] [BookingAutomation]: First hotel name: 'Best Western Plus La Demeure'
+[2026-08-05 21:59:12] [INFO] [BookingAutomation]: Opening first hotel details...
+[2026-08-05 21:59:13] [WARNING] [BookingAutomation]: Could not click first hotel button, attempting JS click on title... Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=150.0.7871.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff61fbe0d25+155a5]
+	chromedriver!GetHandleVerifier [0x7ff61fbe0d80+15600]
+	chromedriver!(No symbol) [0x7ff61f73594d]
+	chromedriver!(No symbol) [0x7ff61f73d8c1]
+	chromedriver!(No symbol) [0x7ff61f740885]
+	chromedriver!(No symbol) [0x7ff61f74094f]
+	chromedriver!(No symbol) [0x7ff61f79829a]
+	chromedriver!(No symbol) [0x7ff61f796193]
+	chromedriver!(No symbol) [0x7ff61f7934e7]
+	chromedriver!(No symbol) [0x7ff61f7923a0]
+	chromedriver!(No symbol) [0x7ff61f784d98]
+	chromedriver!(No symbol) [0x7ff61f7b91ca]
+	chromedriver!(No symbol) [0x7ff61f784616]
+	chromedriver!(No symbol) [0x7ff61f7de01b]
+	chromedriver!(No symbol) [0x7ff61f782e6c]
+	chromedriver!(No symbol) [0x7ff61f783d93]
+	chromedriver!GetHandleVerifier [0x7ff6201c6431+5facb1]
+	chromedriver!GetHandleVerifier [0x7ff6201c0a9b+5f531b]
+	chromedriver!GetHandleVerifier [0x7ff6201e5865+61a0e5]
+	chromedriver!GetHandleVerifier [0x7ff61fbfdace+3234e]
+	chromedriver!GetHandleVerifier [0x7ff61fc0661c+3ae9c]
+	chromedriver!GetHandleVerifier [0x7ff61fbeab74+1f3f4]
+	chromedriver!GetHandleVerifier [0x7ff61fbead04+1f584]
+	chromedriver!GetHandleVerifier [0x7ff61fbcd9d7+2257]
+	KERNEL32!BaseThreadInitThunk [0x7ff94ba4ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff94d8791cc+2c]
+
+[2026-08-05 21:59:14] [INFO] [BookingAutomation]: Clicked element via JS: ('xpath', "(//div[@data-testid='title'] | //span[@data-testid='header-title'])[1]")
+[2026-08-05 21:59:16] [INFO] [BookingAutomation]: Switched to tab window handle: 1AF84D7720511CA2870A1C297CFE0D8A
+[2026-08-05 21:59:16] [INFO] [BookingAutomation]: Verifying Hotel Details page load...
+[2026-08-05 21:59:17] [INFO] [BookingAutomation]: Extracted text 'Best Western Plus La Demeure' from locator ('xpath', "//h2[contains(@class, 'pp-header__title')] | //h2[@id='hp_hotel_name'] | //h2[contains(@class, 'hp__hotel-name')] | //h2")
+[2026-08-05 21:59:17] [INFO] [BookingAutomation]: Retrieved hotel detail title: 'Best Western Plus La Demeure'
+[2026-08-05 21:59:17] [INFO] [BookingAutomation]: Verified hotel detail page loaded for: 'Best Western Plus La Demeure'
+[2026-08-05 21:59:17] [INFO] [BookingAutomation]: --- Finished Scenario: 'Select a hotel and verify property details page' [Status: Status.passed] ---
+
+[2026-08-05 21:59:19] [INFO] [BookingAutomation]: WebDriver instance closed successfully.
+[2026-08-05 21:59:19] [INFO] [BookingAutomation]: --- Starting Scenario: 'Verify Booking.com homepage loads successfully' ---
+[2026-08-05 21:59:19] [INFO] [BookingAutomation]: Initializing WebDriver for 'chrome' (Headless=True)...
+[2026-08-05 21:59:21] [INFO] [BookingAutomation]: WebDriver for 'chrome' initialized successfully.
+[2026-08-05 21:59:21] [INFO] [BookingAutomation]: Navigating to URL: https://www.booking.com
+[2026-08-05 21:59:22] [INFO] [BookingAutomation]: Checking for blocking popups/modals...
+[2026-08-05 21:59:29] [INFO] [BookingAutomation]: Clicked element: ('xpath', "//button[@aria-label='Dismiss sign-in info.'] | //button[@aria-label='Dismiss sign in info.'] | //button[contains(@class, 'b868e42f9b')]")
+[2026-08-05 21:59:29] [INFO] [BookingAutomation]: Dismissed sign-in modal prompt.
+[2026-08-05 21:59:29] [INFO] [BookingAutomation]: Page title retrieved: Booking.com | Official site | The best hotels, flights, car rentals & accommodations
+[2026-08-05 21:59:29] [INFO] [BookingAutomation]: Page title retrieved: Booking.com | Official site | The best hotels, flights, car rentals & accommodations
+[2026-08-05 21:59:29] [INFO] [BookingAutomation]: --- Finished Scenario: 'Verify Booking.com homepage loads successfully' [Status: Status.passed] ---
+
+[2026-08-05 21:59:31] [INFO] [BookingAutomation]: WebDriver instance closed successfully.
+[2026-08-05 21:59:31] [INFO] [BookingAutomation]: --- Starting Scenario: 'Search hotels by destination, travel dates, and guests -- @1.1 ' ---
+[2026-08-05 21:59:31] [INFO] [BookingAutomation]: Initializing WebDriver for 'chrome' (Headless=True)...
+[2026-08-05 21:59:33] [INFO] [BookingAutomation]: WebDriver for 'chrome' initialized successfully.
+[2026-08-05 21:59:33] [INFO] [BookingAutomation]: Navigating to URL: https://www.booking.com
+[2026-08-05 21:59:34] [INFO] [BookingAutomation]: Checking for blocking popups/modals...
+[2026-08-05 21:59:41] [INFO] [BookingAutomation]: Clicked element: ('xpath', "//button[@aria-label='Dismiss sign-in info.'] | //button[@aria-label='Dismiss sign in info.'] | //button[contains(@class, 'b868e42f9b')]")
+[2026-08-05 21:59:41] [INFO] [BookingAutomation]: Dismissed sign-in modal prompt.
+[2026-08-05 21:59:41] [INFO] [BookingAutomation]: Page title retrieved: Booking.com | Official site | The best hotels, flights, car rentals & accommodations
+[2026-08-05 21:59:41] [INFO] [BookingAutomation]: Entering destination: 'Paris'
+[2026-08-05 21:59:41] [INFO] [BookingAutomation]: Checking for blocking popups/modals...
+[2026-08-05 21:59:54] [INFO] [BookingAutomation]: Entered text 'Paris' into locator ('xpath', "//input[@name='ss' or @aria-label='Where are you going?' or @placeholder='Where are you going?']")
+[2026-08-05 21:59:56] [INFO] [BookingAutomation]: Clicked element: ('xpath', "//ul[@role='group']//li[1] | //div[@data-testid='autocomplete-results']//li[1] | //li[contains(@id, 'autocomplete-result')]")
+[2026-08-05 21:59:56] [INFO] [BookingAutomation]: Selected first autocomplete suggestion.
+[2026-08-05 21:59:56] [INFO] [BookingAutomation]: Selecting dates: Check-in=2026-09-10, Check-out=2026-09-15
+[2026-08-05 22:00:00] [INFO] [BookingAutomation]: Clicked element: ('xpath', "//span[@data-date='2026-09-10'] | //td[@data-date='2026-09-10']")
+[2026-08-05 22:00:00] [INFO] [BookingAutomation]: Selected check-in date: 2026-09-10
+[2026-08-05 22:00:00] [INFO] [BookingAutomation]: Clicked element: ('xpath', "//span[@data-date='2026-09-15'] | //td[@data-date='2026-09-15']")
+[2026-08-05 22:00:00] [INFO] [BookingAutomation]: Selected check-out date: 2026-09-15
+[2026-08-05 22:00:00] [INFO] [BookingAutomation]: Configuring guests (Adults=2)...
+[2026-08-05 22:00:01] [INFO] [BookingAutomation]: Clicked element: ('xpath', "//button[@data-testid='occupancy-config'] | //button[contains(@aria-label, 'occupancy')]")
+[2026-08-05 22:00:01] [INFO] [BookingAutomation]: Clicking Search button...
+[2026-08-05 22:00:04] [INFO] [BookingAutomation]: Clicked element: ('xpath', "//button[@type='submit' and (.//span[contains(text(),'Search')] or @data-testid='searchbox-search-button')] | //button[@type='submit']")
+[2026-08-05 22:00:04] [INFO] [BookingAutomation]: Verifying Search Results page load...
+[2026-08-05 22:00:05] [INFO] [BookingAutomation]: Found 25 hotel property cards on current search results page.
+[2026-08-05 22:00:05] [INFO] [BookingAutomation]: Found 25 hotel property cards on current search results page.
+[2026-08-05 22:00:05] [INFO] [BookingAutomation]: Verified 25 hotels listed for 'Paris'.
+[2026-08-05 22:00:05] [INFO] [BookingAutomation]: --- Finished Scenario: 'Search hotels by destination, travel dates, and guests -- @1.1 ' [Status: Status.passed] ---
+
+[2026-08-05 22:00:07] [INFO] [BookingAutomation]: WebDriver instance closed successfully.
+[2026-08-05 22:00:07] [INFO] [BookingAutomation]: --- Starting Scenario: 'Search hotels by destination, travel dates, and guests -- @1.2 ' ---
+[2026-08-05 22:00:07] [INFO] [BookingAutomation]: Initializing WebDriver for 'chrome' (Headless=True)...
+[2026-08-05 22:00:09] [INFO] [BookingAutomation]: WebDriver for 'chrome' initialized successfully.
+[2026-08-05 22:00:09] [INFO] [BookingAutomation]: Navigating to URL: https://www.booking.com
+[2026-08-05 22:00:10] [INFO] [BookingAutomation]: Checking for blocking popups/modals...
+[2026-08-05 22:00:17] [INFO] [BookingAutomation]: Clicked element: ('xpath', "//button[@aria-label='Dismiss sign-in info.'] | //button[@aria-label='Dismiss sign in info.'] | //button[contains(@class, 'b868e42f9b')]")
+[2026-08-05 22:00:17] [INFO] [BookingAutomation]: Dismissed sign-in modal prompt.
+[2026-08-05 22:00:17] [INFO] [BookingAutomation]: Page title retrieved: Booking.com | Official site | The best hotels, flights, car rentals & accommodations
+[2026-08-05 22:00:17] [INFO] [BookingAutomation]: Entering destination: 'London'
+[2026-08-05 22:00:17] [INFO] [BookingAutomation]: Checking for blocking popups/modals...
+[2026-08-05 22:00:30] [INFO] [BookingAutomation]: Entered text 'London' into locator ('xpath', "//input[@name='ss' or @aria-label='Where are you going?' or @placeholder='Where are you going?']")
+[2026-08-05 22:00:32] [INFO] [BookingAutomation]: Clicked element: ('xpath', "//ul[@role='group']//li[1] | //div[@data-testid='autocomplete-results']//li[1] | //li[contains(@id, 'autocomplete-result')]")
+[2026-08-05 22:00:32] [INFO] [BookingAutomation]: Selected first autocomplete suggestion.
+[2026-08-05 22:00:32] [INFO] [BookingAutomation]: Selecting dates: Check-in=2026-10-01, Check-out=2026-10-05
+[2026-08-05 22:00:45] [INFO] [BookingAutomation]: Configuring guests (Adults=2)...
+[2026-08-05 22:00:45] [INFO] [BookingAutomation]: Clicked element: ('xpath', "//button[@data-testid='occupancy-config'] | //button[contains(@aria-label, 'occupancy')]")
+[2026-08-05 22:00:46] [INFO] [BookingAutomation]: Clicking Search button...
+[2026-08-05 22:00:49] [INFO] [BookingAutomation]: Clicked element: ('xpath', "//button[@type='submit' and (.//span[contains(text(),'Search')] or @data-testid='searchbox-search-button')] | //button[@type='submit']")
+[2026-08-05 22:00:49] [INFO] [BookingAutomation]: Verifying Search Results page load...
+[2026-08-05 22:00:51] [ERROR] [BookingAutomation]: Search results page did not load as expected: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=150.0.7871.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff61fbe0d25+155a5]
+	chromedriver!GetHandleVerifier [0x7ff61fbe0d80+15600]
+	chromedriver!(No symbol) [0x7ff61f73594d]
+	chromedriver!(No symbol) [0x7ff61f73d8c1]
+	chromedriver!(No symbol) [0x7ff61f740c1f]
+	chromedriver!(No symbol) [0x7ff61f7df292]
+	chromedriver!(No symbol) [0x7ff61f7b91ca]
+	chromedriver!(No symbol) [0x7ff61f7de01b]
+	chromedriver!(No symbol) [0x7ff61f782e6c]
+	chromedriver!(No symbol) [0x7ff61f783d93]
+	chromedriver!GetHandleVerifier [0x7ff6201c6431+5facb1]
+	chromedriver!GetHandleVerifier [0x7ff6201c0a9b+5f531b]
+	chromedriver!GetHandleVerifier [0x7ff6201e5865+61a0e5]
+	chromedriver!GetHandleVerifier [0x7ff61fbfdace+3234e]
+	chromedriver!GetHandleVerifier [0x7ff61fc0661c+3ae9c]
+	chromedriver!GetHandleVerifier [0x7ff61fbeab74+1f3f4]
+	chromedriver!GetHandleVerifier [0x7ff61fbead04+1f584]
+	chromedriver!GetHandleVerifier [0x7ff61fbcd9d7+2257]
+	KERNEL32!BaseThreadInitThunk [0x7ff94ba4ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff94d8791cc+2c]
+
+[2026-08-05 22:00:51] [ERROR] [BookingAutomation]: Step failed: 'the search results page should be displayed' in scenario 'Search hotels by destination, travel dates, and guests -- @1.2 '
+[2026-08-05 22:00:51] [INFO] [BookingAutomation]: Screenshot saved to C:\Users\USERAS\Desktop\Test Automation Lab\Booking.com\reports\screenshots\FAILED_Search_hotels_by_destination,_travel_dates,_and_guests_--_@1.2__1785945651.png
+[2026-08-05 22:00:51] [INFO] [BookingAutomation]: --- Finished Scenario: 'Search hotels by destination, travel dates, and guests -- @1.2 ' [Status: Status.failed] ---
+
+[2026-08-05 22:00:53] [INFO] [BookingAutomation]: WebDriver instance closed successfully.
+[2026-08-05 22:00:53] [INFO] [BookingAutomation]: ==================================================
+[2026-08-05 22:00:53] [INFO] [BookingAutomation]:  Suite Completed in 141.12 seconds 
+[2026-08-05 22:00:53] [INFO] [BookingAutomation]: ==================================================
