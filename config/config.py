@@ -5,7 +5,7 @@ class Config:
     
     BASE_URL = "https://www.booking.com"
     BROWSER = os.getenv("BROWSER", "chrome").lower()
-    HEADLESS = os.getenv("HEADLESS", "true").lower() == "true"  # Default headless for server/lab environments
+    HEADLESS = os.getenv("HEADLESS", "false").lower() == "true"  # Default to visible browser UI
     DEFAULT_TIMEOUT = 15  # Explicit wait default timeout in seconds
     PAGE_LOAD_TIMEOUT = 30
     
